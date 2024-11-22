@@ -171,14 +171,14 @@ export default function WordPanel() {
               </div>
             )}
             <div className="relative">
-              <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} />
-              {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
               <Translation
                 trans={currentWord.trans.join('；')}
                 showTrans={shouldShowTranslation}
                 onMouseEnter={() => handleShowTranslation(true)}
                 onMouseLeave={() => handleShowTranslation(false)}
               />
+              <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} />
+              {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
             </div>
           </div>
         )}

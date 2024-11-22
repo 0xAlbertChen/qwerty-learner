@@ -3622,6 +3622,17 @@ const japaneseExam: DictionaryResource[] = [
     language: 'romaji',
     languageCategory: 'ja',
   },
+  {
+    id: 'japaneseTest001',
+    name: 'AlbertTest',
+    description: 'AlbertTest',
+    category: '日语学习',
+    tags: ['Albert'],
+    url: '/dicts/japanese_test_Albert.json',
+    length: 2000,
+    language: 'romaji',
+    languageCategory: 'ja',
+  },
 ]
 
 // 德语词典
